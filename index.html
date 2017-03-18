@@ -1,0 +1,43 @@
+<html>
+ <meta charset="UTF-8"> 
+ <head>
+  <title>New Tab or Home</title>
+  <!-- <link rel="stylesheet" type="text/css" href="pure-min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+  <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
+  <style type="text/css">
+    body, html{
+      background-color: #ccebff;
+      width: auto;
+      height: 100%;
+    }
+  </style>
+
+  <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none';
+           script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com;
+           object-src *;
+           style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+           img-src *;
+           media-src *;
+           font-src *;
+           connect-src *;
+           ">
+
+ </head>
+ <body>
+     <div class="container">
+         <form id="form">
+           <img src="img/Octocat.png" alt="GitHub Logo" height="100" width="100" style="float: left;">
+           <br>
+           <label style="margin-left: 20px">Type a user name to see their repositories!</lable>
+           <br>
+           <input style="margin-left: 50px" placeholder="User" id="userinput"></input>
+           <button type="submit">Go!</button>
+        </form>
+        <br>
+        <div id="data" class="columns is-multiline" style="margin-top:20px"></div>
+    </div>
+ </body>
+ <script src="githubapi.js"></script>
+</html>
