@@ -11,3 +11,5 @@ This project is under MIT license.
 #MozActivate
 This project was developed at a HackADay meetup organized
 by Mozilla contributors and enthusiasts.
+
+![alt tag](https://github.com/lays147/GithubSearch/blob/master/img/example.png)
